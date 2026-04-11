@@ -26,15 +26,14 @@ Defined the schema with all required constraints to ensure data reliability.
 ![Table Creation](table2.png).
 ![Table Creation](table3.png).
 
-### 2. Data Population
+### 2. Data Insert
 Inserted 8 members, 8 books, and 10 borrow records to simulate a real-world dataset.
 ![Data Insertion](insertdata.png)
 
 ### 3. Data Retrieval & Analysis
 Execution of various business logic queries including sorting, filtering, and counting.
 
-#### Filtering and Top Records:
-![Query Result 1](Screenshot%202026-04-11%20055700.png)
+![Query Result 1]()
 ![Query Result 2](Screenshot%202026-04-11%20060449.png)
 
 #### Pattern Matching & Logical Filters:
