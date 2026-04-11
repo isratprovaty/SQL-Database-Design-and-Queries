@@ -1,0 +1,48 @@
+-- 1. Show all records from all tables
+SELECT * FROM MEMBER;
+SELECT * FROM BOOK;
+SELECT * FROM BORROW;
+
+-- 2. Display distinct values of BOOK.Availability
+SELECT DISTINCT Availability FROM BOOK;
+
+-- 3. Find members whose Age is 18 or older
+SELECT * FROM MEMBER WHERE Age >= 18;
+
+-- 4. Find books with Price between 500 and 2000
+SELECT * FROM BOOK WHERE Price BETWEEN 500 AND 2000;
+
+-- 5. Find books that are either AVAILABLE or BORROWED
+SELECT * FROM BOOK WHERE Availability IN ('AVAILABLE', 'BORROWED');
+
+-- 6. Find members whose name starts with 'A' or ends with 'n'
+SELECT * FROM MEMBER WHERE FullName LIKE 'A%' OR FullName LIKE '%n';
+
+-- 7. Find members with a valid phone number (not N/A) and older than 20
+SELECT * FROM MEMBER WHERE Phone <> 'N/A' AND Age > 20;
+
+-- 8. Find members whose Age is NOT between 12 and 17
+SELECT * FROM MEMBER WHERE Age NOT BETWEEN 12 AND 17;
+
+-- 9. Find books whose Title contains 'Data' or 'Database'
+SELECT * FROM BOOK WHERE Title LIKE '%Data%' OR Title LIKE '%Database%';
+
+-- 10. Show the top 3 most expensive books
+SELECT * FROM BOOK ORDER BY Price DESC LIMIT 3;
+
+-- 11. Show the 2 cheapest books
+SELECT * FROM BOOK ORDER BY Price ASC LIMIT 2;
+
+-- 12. Count total records in each table
+SELECT COUNT(*) AS TotalMembers FROM MEMBER;
+SELECT COUNT(*) AS TotalBooks FROM BOOK;
+SELECT COUNT(*) AS TotalBorrows FROM BORROW;
+
+-- 13. Show average, minimum, and maximum price of books
+SELECT AVG(Price) AS AvgPrice, MIN(Price) AS MinPrice, MAX(Price) AS MaxPrice FROM BOOK;
+
+-- 14. Show the count of books based on their Availability status
+SELECT Availability, COUNT(*) AS BookCount FROM BOOK GROUP BY Availability;
+
+-- 15. Show how many times each member has borrowed books
+SELECT MemberID, COUNT(*) AS TimesBorrowed FROM BORROW GROUP BY MemberID;
