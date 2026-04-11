@@ -31,22 +31,25 @@ Inserted 8 members, 8 books, and 10 borrow records to simulate a real-world data
 ![Data Insertion](insertdata.png)
 
 ### 3. Data Retrieval & Analysis
-Execution of various business logic queries including sorting, filtering, and counting.
+Execution of various queries including sorting, filtering, and counting.
 
-![Query Result 1]()
-![Query Result 2](Screenshot%202026-04-11%20060449.png)
-
-#### Pattern Matching & Logical Filters:
-![Query Result 3](Screenshot%202026-04-11%20060513.png)
-![Query Result 4](Screenshot%202026-04-11%20060538.png)
-
-#### Statistical Analysis & Aggregation:
-![Query Result 5](Screenshot%202026-04-11%20061052.png)
-![Query Result 6](Screenshot%202026-04-11%20061553.png)
-
-#### Inventory and Member Activity Tracking:
-![Query Result 7](Screenshot%202026-04-11%20062527.png)
-![Query Result 8](Screenshot%202026-04-11%20062643.png)
+![Query Result 1](queryresult1.png)
+![Query Result 1](queryresult1(2).png)
+![Query Result 1](queryresult1(3).png)
+![Query Result 2](queryresult2.png)
+![Query Result 3](queryresult3.png)
+![Query Result 4](queryresult4.png)
+![Query Result 5](queryresult5.png)
+![Query Result 6](queryresult6.png)
+![Query Result 7](queryresult7.png)
+![Query Result 8](queryresult8.png)
+![Query Result 9](queryresult9.png)
+![Query Result 10](queryresult10.png)
+![Query Result 11](queryresult11.png)
+![Query Result 12](queryresult12.png)
+![Query Result 13](queryresult13.png)
+![Query Result 14](queryresult14.png)
+![Query Result 15](queryresult15.png)
 
 ---
 
