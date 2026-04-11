@@ -1,4 +1,4 @@
-# SQL Library Management System: Schema Design & Data Analysis
+# SQL Library Management System: Database Design and Queries
 
 This project demonstrates the creation of a **Library Management System** using MySQL. It covers database schema design with strict constraints, table relationships, and complex data retrieval queries.
 
