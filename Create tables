@@ -1,0 +1,27 @@
+-- Create MEMBER table with constraints
+CREATE TABLE MEMBER (
+    MemberID INT PRIMARY KEY AUTO_INCREMENT,
+    FullName VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Age INT CHECK(Age >= 12),
+    Phone VARCHAR(15) NOT NULL DEFAULT 'N/A'
+);
+
+-- Create BOOK table with constraints
+CREATE TABLE BOOK (
+    BookID INT PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(150) NOT NULL,
+    ISBN VARCHAR(20) NOT NULL UNIQUE,
+    Price DECIMAL(8,2) CHECK(Price >= 0),
+    Availability ENUM('AVAILABLE','BORROWED') DEFAULT 'AVAILABLE'
+);
+
+-- Create BORROW table with Foreign Key relationships
+CREATE TABLE BORROW (
+    BorrowID INT PRIMARY KEY AUTO_INCREMENT,
+    MemberID INT,
+    BookID INT,
+    BorrowDate DATE NOT NULL,
+    FOREIGN KEY (MemberID) REFERENCES MEMBER(MemberID),
+    FOREIGN KEY (BookID) REFERENCES BOOK(BookID)
+);
