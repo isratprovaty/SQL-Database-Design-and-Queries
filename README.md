@@ -22,8 +22,8 @@ The database `library_query_lab` consists of three tables:
 
 ### 1. Database & Table Creation
 Defined the schema with all required constraints to ensure data reliability.
-![Table Creation](table 1.png).
-![Table Creation](table 2.png).
+![Table Creation](table1.png).
+![Table Creation](table2.png).
 
 ### 2. Data Population
 Inserted 8 members, 8 books, and 10 borrow records to simulate a real-world dataset.
