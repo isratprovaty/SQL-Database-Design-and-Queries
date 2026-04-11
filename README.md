@@ -24,11 +24,11 @@ The database `library_query_lab` consists of three tables:
 Defined the schema with all required constraints to ensure data reliability.
 ![Table Creation](table1.png).
 ![Table Creation](table2.png).
+![Table Creation](table3.png).
 
 ### 2. Data Population
 Inserted 8 members, 8 books, and 10 borrow records to simulate a real-world dataset.
-![Data Insertion](Screenshot%202026-04-11%20054618.png)
-![Data Insertion Cont.](Screenshot%202026-04-11%20054629.png)
+![Data Insertion](insertdata.png)
 
 ### 3. Data Retrieval & Analysis
 Execution of various business logic queries including sorting, filtering, and counting.
